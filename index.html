@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+h1{
+  color:red;
+}
+#green{
+  color:green;
+}
+.Black{
+  color:black;
+}
+body {
+    background-image: url('http://www.freedigitalphotos.net/images/previews/abstract-background-medical-100491359.jpg');
+}
+div{
+  width: 320px;
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 10;
+}
+div1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%  { left:0px; top:0px;}
+  25%  { left:100px; top:0px;}
+  50% { left:0px; top:0px;}
+  75%  { left:-100px; top:0px;}
+  100% {left:0px; top:0px;}
+  /* 75%  { left:0px; top:0px;} */
+  /* 100% { left:0px; top:0px;} */
+}
+.relative {
+  position: relative;
+  left: 500px;
+  border: 3px solid #73AD21;
+  border-style: dashed;
+}
+div3{
+  float: right;
+  font-size: 30px;
+  color: blue;
+}
+h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+</style>
+<p id="demo"></p>
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+var x = document.getElementById("demo");
+function getLocation() {
+ if (navigator.geolocation) {
+   navigator.geolocation.getCurrentPosition(showPosition);
+ } else {
+   x.innerHTML = "Geolocation is not supported by this browser.";
+ }
+}
+
+function showPosition(position) {
+ alert(position.coords.latitude+" "+position.coords.longitude);
+}
+</script>
+  <head>
+    <meta charset="UTF-8">
+       <meta name="description" content="Wildlife">
+    </head>
+  <body onload="startTime()">
+    <div3 id="txt"></div3>
+    <font class="Black">
+      <h1> <div1> <div class=relative><center>Wild life protection </div></div1></h1></p>
+      <button type="submit" style="float: right;" onclick="getLocation()" >Geolocation </button>
+      <button type="submit" style="float: right;" onclick="window.open('signup.html');window.top.close()" >Signup to start helping </button>
+      <br>
+      <p id="green">The Wild Life Protection Act, 1972 is an Act of the Parliament of India enacted for protection of plants and animal species. Before 1972, India had only five designated national parks. Among other reforms, the Act established schedules of protected plant and animal species; hunting or harvesting these species was largely outlawed.[1] The Act provides for the protection of wild animals, birds and plants; and for matters connected there with or ancillary or incidental thereto. It extends to the whole of [India]. </p>
+      <img src="https://cdn.britannica.com/32/88432-050-51E26C26/Dodo.jpg" usemap="#pic description1" width=500 height=300>
+      <map name="pic description1">
+            <area shape="rect" coords="0,0,500,300" alt="DODO" href="https://en.wikipedia.org/wiki/Dodo"/>
+      <img src="https://i.pinimg.com/474x/5f/de/c4/5fdec4a859f816f9bebf185cf9a951bf.jpg" usemap="#pic description3" width=500 height=300>
+      <map name="pic description2">
+            <area shape="rect" coords="0,0,500,300" alt="Tiger" href="https://en.wikipedia.org/wiki/Thylacine"/>
+      <img src="https://discoverthetarkine.com.au/wp-content/uploads/2014/09/tasmanian-tiger.jpg" usemap="#pic description2" width=400 height=300><br>
+      <map name="pic description3">
+            <area shape="rect" coords="0,0,400,300" alt="Ibex" href="https://en.wikipedia.org/wiki/ibex"/>
+      <a href="https://en.wikipedia.org/wiki/Wildlife_conservation" >Click here for more content</a>
+      <p><marquee>Most of the animals in today's world are facing extinction and it is an alarming issue....</marquee>
+        <br><font size =5> <b>Animals that are extinct :</b></font>
+        </p>
+      <ul>
+        <a href="#Dudo"><li>Dudo</li></a>
+        <a href="#Tesmanian Tiger"><li>Tesmanian tiger </li></a>
+        <a href="#IBEX"><li>IBEX</li></a>
+        </ul>
+
+    <table style="width:50%">
+  <tr>
+    <th>Animal</th>
+    <th>Location</th>
+  </tr>
+  <tr><td>Dodo</td>
+    <td>Africa</td>
+  </tr>
+  <tr>
+    <td>Tiger </td>
+    <td> Europe</td>
+  </tr>
+  <tr>
+    <td>IBEX </td>
+    <td>Europe</td>
+  </tr>
+  </table>
+  <p>Extinction is the termination of a kind of organism or of a group of kinds (taxon), usually a species. The moment of extinction is generally considered to be the death of the last individual of the species, although the capacity to breed and recover may have been lost before this point.<br>
+    An endangered species is a species that is very likely to become extinct in the near future, either worldwide or in a particular political jurisdiction. Endangered species may be at risk due to factors such as habitat loss, poaching and invasive species.<br>
+Wildlife conservation refers to the practice of protecting wild species and their habitats in order to maintain healthy wildlife species or populations and to restore, protect or enhance natural ecosystems. Major threats to wildlife include habitat destruction/degradation/fragmentation, overexploitation, poaching, pollution and climate change. The IUCN estimates that 27,000 species of the ones assessed are at risk for extinction. Expanding to all existing species, a 2019 UN report on biodiversity put this estimate even higher at a million species. It's also being acknowledged that an increasing number of ecosystems on Earth containing endangered species are disappearing. To address these issues, there have been both national and international governmental efforts to preserve Earth's wildlife. Prominent conservation agreements include the 1973 Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) and the 1992 Convention on Biological Diversity (CBD).[1][2] There are also numerous nongovernmental organizations (NGO's) dedicated to conservation such as the Nature Conservancy, World Wildlife Fund, and Conservation International.
+  </p>
+  <a id="Dudo"><div><p>The dodo (Raphus cucullatus) is an extinct flightless bird that was endemic to the island of Mauritius, east of Madagascar in the Indian Ocean. The dodo's closest genetic relative was the also-extinct Rodrigues solitaire, the two forming the subfamily Raphinae of the family of pigeons and doves.</p></div></a><br><br><br><br><br>
+  <a id="Tesmanian Tiger"><div><p>The Tesmanian Tiger is an extinct carnivorous marsupial that was native to the island state of Tasmania, New Guinea, and the Australian mainland. It was one of the largest known carnivorous marsupials, evolving about 2 million years ago. The last known live animal was captured in 1930 in Tasmania</p></div></a><br><br><br><br>
+  <a id="IBEX"><div ><p>The Alpine ibex, also known as the steinbock, bouquetin, or simply ibex, is a species of wild goat that lives in the mountains of the European Alps. It is a sexually dimorphic species with larger males that carry larger, curved horns. Their coat colour is typically brownish grey</p></div></a><br><br><br><br><br>
+      </font>
+      <iframe src="https://en.wikipedia.org/wiki/Wildlife_conservation" width=1000 height=500>
+    </iframe>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<style>
+.bg {
+  /* The image used */
+  background-image: url("http://www.freedigitalphotos.net/images/previews/abstract-background-medical-100491359.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely onclick="window.open('final.html');window.close()*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<head>
+<script>
+function Validation(){
+  var x = document.forms["signup"]["text1"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if(!isNaN(x)){
+    alert("Enter a string type only");
+    return false;
+  }
+  var y=document.getElementById('text2').value;
+  if(y==""){
+    alert("Age must be filled");
+    return false;
+  }
+  if(isNaN(y)|| y<=0 || y>100){
+    alert("Enter a valid age");
+    return false;
+  }
+  var z=document.getElementById('text3').value;
+  if(!(/^(?=.*\d)(?=.*[a-z])(?=.*[!@#$%^&*])(?=.*[A-Z]).{6,20}$/.test(z))){
+    alert("Password weak");
+    return false;
+  }
+  var a=document.forms["signup"]["text4"].value;
+  if(!(/(?=.[0-9]).{10}/.test(a))){
+    alert("Phone number should contain only 10 digits");
+    return false;
+  }
+  window.open('final.html');
+  window.top.close();
+}
+</script>
+  <meta charset="utf-">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="bg">
+    <h1 align="center ">Signup page</h1>
+      <form name="signup" onsubmit="Validation()" method="POST">
+          <h3>Enter your name  :  *<input id="text1" placeholder="first name" ><br><h3>
+          <h3>Age : *<input id="text2" placeholder="age"> <h3>
+          <h3>Gender : *<h3>
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Rather not say</option>
+          </select>
+          <h3>Password :  *<input type=password id="text3" placeholder="password"><br><h3>
+          <h3>Phone number  :  *<input id="text4" placeholder="Phone number"><br><h3>
+          <h3>Address : <input id="text5" placeholder="Address"><br><br><h3>
+          <input type="submit" value="Submit" >
+          <input type='reset' value='Reset' name='reset'>
+      </form>
+    </div>
+
+</body>
+
+<html>
